@@ -1,11 +1,16 @@
 {
-	"name": "initial-commit",
-	"version": "0.1.2",
-	"description": "Starting template for repository",
-	"keywords": [],
-	"homepage": "https://atanas.info/projects/initial-commit.html",
+	"name": "svgo-add-viewbox",
+	"version": "1.0.0",
+	"description": "SVGO plugin which adds 'viewBox' attribute based on 'width' and 'height' attributes",
+	"keywords": [
+		"SVG",
+		"SVGO",
+		"SVGO plugin",
+		"viewBox"
+	],
+	"homepage": "https://atanas.info/projects/svgo-add-viewbox.html",
 	"bugs": {
-		"url": "https://github.com/scriptex/initial-commit/issues",
+		"url": "https://github.com/scriptex/svgo-add-viewbox/issues",
 		"email": "scriptex.bg@gmail.com"
 	},
 	"license": "MIT",
@@ -29,7 +34,7 @@
 		}
 	],
 	"main": "index.js",
-	"repository": "https://github.com/scriptex/initial-commit",
+	"repository": "https://github.com/scriptex/svgo-add-viewbox",
 	"scripts": {
 		"test": "echo 'No tests found'",
 		"release-minor": "release-it minor --ci",

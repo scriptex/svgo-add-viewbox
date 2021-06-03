@@ -20,21 +20,21 @@ exports.description = 'Adds viewBox attribute based on width and height';
  * @author Atanas Atanasov
  */
 exports.fn = function (item) {
-    const {
-        name,
-        type,
-        attributes: { width, height, viewBox },
-    } = item;
+	const {
+		name,
+		type,
+		attributes: { width, height, viewBox }
+	} = item;
 
-    if (
-        name === 'svg' &&
-        type === 'element' &&
-        width != null &&
-        height != null &&
-        viewBox == null &&
-        Number.isNaN(Number(width)) === false &&
-        Number.isNaN(Number(height)) === false
-    ) {
-        item.attributes.viewBox = `0 0 ${Number(width)} ${Number(height)}`;
-    }
+	if (
+		name === 'svg' &&
+		type === 'element' &&
+		width != null &&
+		height != null &&
+		viewBox == null &&
+		Number.isNaN(Number(width)) === false &&
+		Number.isNaN(Number(height)) === false
+	) {
+		item.attributes.viewBox = `0 0 ${Number(width)} ${Number(height)}`;
+	}
 };
