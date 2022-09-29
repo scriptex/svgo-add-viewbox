@@ -1,38 +1,27 @@
 {
 	"name": "svgo-add-viewbox",
-	"version": "1.0.0",
+	"version": "1.1.0",
 	"description": "SVGO plugin which adds 'viewBox' attribute based on 'width' and 'height' attributes",
 	"keywords": [
-		"SVG",
-		"SVGO",
+		"viewBox",
 		"SVGO plugin",
-		"viewBox"
+		"SVG optimizer",
+		"SVG optimization"
 	],
 	"homepage": "https://atanas.info/projects/svgo-add-viewbox.html",
 	"bugs": {
 		"url": "https://github.com/scriptex/svgo-add-viewbox/issues",
-		"email": "scriptex.bg@gmail.com"
+		"email": "hi@atanas.info"
 	},
 	"license": "MIT",
-	"author": {
-		"name": "Atanas Atanasov",
-		"email": "scriptex.bg@gmail.com",
-		"url": "https://atanas.info"
-	},
-	"funding": [
-		{
-			"type": "individual",
-			"url": "https://www.paypal.me/scriptex"
-		},
-		{
-			"type": "patreon",
-			"url": "https://www.patreon.com/atanas"
-		},
-		{
-			"type": "individual",
-			"url": "https://ko-fi.com/scriptex"
-		}
-	],
+	"author": "Atanas Atanasov <hi@atanas.info> (https://atanas.info)",
+	"funding": "https://github.com/sponsors/scriptex",
 	"main": "index.js",
-	"repository": "https://github.com/scriptex/svgo-add-viewbox"
+	"repository": {
+		"type": "git",
+		"url": "github:scriptex/svgo-add-viewbox"
+	},
+	"scripts": {},
+	"dependencies": {},
+	"devDependencies": {}
 }
