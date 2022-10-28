@@ -30,7 +30,9 @@ In order to use this plugin correctly, you SVGs should have their `width` and `h
 
 ## Usage
 
-**This plugin should be used with SVGO v2 and above.**
+**v2.x.x of this plugin should be used with SVGO v3 and above.**
+
+**v1.x.x of this plugin should be used with SVGO v2.**
 
 1. Create a `svgo.config.js` file following the [official configuration guide](https://github.com/svg/svgo#configuration)
 2. Use the option to specify a custom plugin.
