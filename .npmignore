@@ -36,3 +36,4 @@ tsconfig.json
 tslint.json
 yarn.lock
 
+test

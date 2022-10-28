@@ -1,6 +1,6 @@
 {
 	"name": "svgo-add-viewbox",
-	"version": "1.1.0",
+	"version": "2.0.0",
 	"description": "SVGO plugin which adds 'viewBox' attribute based on 'width' and 'height' attributes",
 	"keywords": [
 		"viewBox",
@@ -21,7 +21,14 @@
 		"type": "git",
 		"url": "github:scriptex/svgo-add-viewbox"
 	},
-	"scripts": {},
+	"scripts": {
+		"svg": "svgo -f ./test/input -o ./test/output --config ./test/svgo.config.js",
+		"test": "yarn svg && tape test/index.js"
+	},
 	"dependencies": {},
-	"devDependencies": {}
+	"devDependencies": {
+		"svg-parser": "2.0.4",
+		"svgo": "3.0.0",
+		"tape": "5.6.1"
+	}
 }
