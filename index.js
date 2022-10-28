@@ -31,7 +31,7 @@ exports.fn = function (item) {
 	} = item.children[0];
 
 	if (
-		(name === 'svg' && !!width && !!height && !attributes?.viewBox) ||
+		(name === 'svg' && !!width && !!height && !attributes.viewBox) ||
 		(Number.isNaN(Number(width)) === false && Number.isNaN(Number(height)) === false)
 	) {
 		item.children[0].attributes.viewBox = `0 0 ${Number(width)} ${Number(height)}`;
