@@ -3,7 +3,7 @@
 [![Codebeat Badge](https://codebeat.co/badges/d765a4c8-2c0e-44f2-89c3-fa364fdc14e6)](https://codebeat.co/projects/github-com-scriptex-svgo-add-viewbox-master)
 [![CodeFactor Badge](https://www.codefactor.io/repository/github/scriptex/svgo-add-viewbox/badge)](https://www.codefactor.io/repository/github/scriptex/svgo-add-viewbox)
 [![DeepScan grade](https://deepscan.io/api/teams/3574/projects/5257/branches/40799/badge/grade.svg)](https://deepscan.io/dashboard#view=project&tid=3574&pid=5257&bid=40799)
-[![Analytics](https://ga-beacon-361907.ew.r.appspot.com/UA-83446952-1/github.com/scriptex/svgo-add-viewbox/README.md?pixel)](https://github.com/scriptex/svgo-add-viewbox/)
+[![Analytics](https://ga-beacon.atanas.info/api/analytics?account=UA-83446952-1&page=github.com/scriptex/svgo-add-viewbox&pixel)](https://github.com/scriptex/svgo-add-viewbox/)
 
 # SVGO Add viewBox
 
@@ -26,40 +26,40 @@
 
 This plugin adds the `viewBox` attribute to your SVGs based on the `width` and `height` attributes. The difference between this plugin and the built-in [`removeDimensions`](https://github.com/svg/svgo/blob/master/plugins/removeDimensions.js) plugin is that `svgo-add-viewbox` does not remove the `width` and `height` of your SVGs.
 
-In order to use this plugin correctly, you SVGs should have their `width` and `height` attributes specified.
+In order to use this plugin correctly, your SVGs should have their `width` and `height` attributes specified.
 
 ## Usage
 
-**v2.x.x of this plugin should be used with SVGO v3 and above.**
+**v2.x.x or 3.x.x of this plugin should be used with SVGO v3 and above.**
 
 **v1.x.x of this plugin should be used with SVGO v2.**
 
 1. Create a `svgo.config.js` file following the [official configuration guide](https://github.com/svg/svgo#configuration)
 2. Use the option to specify a custom plugin.
 3. Install this module from NPM
-    ```sh
-    npm install svgo-add-viewbox --save-dev
-    # or
-    yarn add svgo-add-viewbox -D
-    ```
-4. `require` the module which you just created in your `svgo.config.js` file:
-    ```javascript
-    const addViewBox = require('svgo-add-viewbox');
-    ```
+
+```sh
+npm install svgo-add-viewbox --save-dev
+# or
+yarn add svgo-add-viewbox -D
+```
+
+4. `import` the module in your `svgo.config.js` file:
+
+```javascript
+import addViewBox from 'svgo-add-viewbox';
+```
+
 5. In the `plugins` array in your `svgo.config.js` file add the following:
-    ```javascript
-    plugins: [
-    	// ... more plugins
-    	{
-    		fn: addViewBox.fn,
-    		name: 'addViewBox',
-    		type: addViewBox.type,
-    		active: addViewBox.active,
-    		description: addViewBox.description
-    	}
-    	// ... more plugins
-    ];
-    ```
+
+```javascript
+plugins: [
+	// ... more plugins
+	addViewBox
+	// ... more plugins
+];
+```
+
 6. Execute your SVG transformation NPM script.
 
 ## LICENSE

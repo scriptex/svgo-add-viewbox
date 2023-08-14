@@ -1,6 +1,6 @@
 {
 	"name": "svgo-add-viewbox",
-	"version": "2.0.1",
+	"version": "3.0.0",
 	"description": "SVGO plugin which adds 'viewBox' attribute based on 'width' and 'height' attributes",
 	"keywords": [
 		"viewBox",
@@ -16,14 +16,15 @@
 	"license": "MIT",
 	"author": "Atanas Atanasov <hi@atanas.info> (https://atanas.info)",
 	"funding": "https://github.com/sponsors/scriptex",
-	"main": "index.js",
+	"main": "index.mjs",
+	"type": "module",
 	"repository": {
 		"type": "git",
 		"url": "github:scriptex/svgo-add-viewbox"
 	},
 	"scripts": {
-		"svg": "svgo -f ./test/input -o ./test/output --config ./test/svgo.config.js",
-		"test": "yarn svg && tape test/index.js"
+		"svg": "svgo -f ./test/input -o ./test/output --config ./test/svgo.config.mjs",
+		"test": "yarn svg && tape test/index.mjs"
 	},
 	"dependencies": {},
 	"devDependencies": {
