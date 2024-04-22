@@ -17,6 +17,11 @@ export default {
 				}
 			}
 		},
-		addViewBox
+		{
+			...addViewBox,
+			params: {
+				overwrite: false
+			}
+		}
 	]
 };
