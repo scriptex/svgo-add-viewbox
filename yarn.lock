@@ -1530,10 +1530,10 @@ svgo@4.0.1:
     picocolors "^1.1.1"
     sax "^1.5.0"
 
-tape@5.10.1:
-  version "5.10.1"
-  resolved "https://registry.yarnpkg.com/tape/-/tape-5.10.1.tgz#a51ff78d929fa4ba80baab55d8621a3909c5d3a5"
-  integrity sha512-cre3VCO4HIc7PSodPWwdLfX1RLUw0IAMVQV8M+erGkLKJ2N2lyxVVqSdRCJL2xM/6o3/3xxwv/QwYr7bRHSquA==
+tape@5.10.2:
+  version "5.10.2"
+  resolved "https://registry.yarnpkg.com/tape/-/tape-5.10.2.tgz#6cc893de06a055181a30b975833e270582e8775a"
+  integrity sha512-MfhVVAWa834kfYL4KgrqHblWfwkjaQvfaQhAX/bBTNQsK8oJ4ztpUe7jiemR2Vegw4pYwpnQMy51MhEmRzbbsg==
   dependencies:
     "@ljharb/now" "^1.0.1"
     "@ljharb/resumer" "^0.1.3"

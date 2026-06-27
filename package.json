@@ -30,6 +30,6 @@
 	"devDependencies": {
 		"svg-parser": "2.0.4",
 		"svgo": "4.0.1",
-		"tape": "5.10.1"
+		"tape": "5.10.2"
 	}
 }
