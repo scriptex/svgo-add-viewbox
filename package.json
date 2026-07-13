@@ -29,7 +29,7 @@
 	"dependencies": {},
 	"devDependencies": {
 		"svg-parser": "2.0.4",
-		"svgo": "4.0.1",
+		"svgo": "4.0.2",
 		"tape": "5.10.2"
 	}
 }
